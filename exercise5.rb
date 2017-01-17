@@ -12,3 +12,7 @@ def explicit_return_method
   return 25
   "The interpreter does not read me, because the return keyword above forces the interpreter to exit the method"
 end
+
+def reverse_sign(num)
+  -1 * num
+end
