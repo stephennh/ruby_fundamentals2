@@ -1,18 +1,9 @@
-puts "What is your name?"
-name = gets
-puts "Hello #{name}!"
+puts "What temperature in Fahrenheit would you liked to convert?"
+feh = gets
 
-def my_first_method
-  1 + 1
-end
-
-
-def explicit_return_method
-  "The interpreter reads over me, but does nothing"
-  return 25
-  "The interpreter does not read me, because the return keyword above forces the interpreter to exit the method"
-end
-
-def reverse_sign(num)
-  -1 * num
+def f_to_c(feh)
+  f = feh.to_i
+  celc = (f - 32) * 5/9
+  puts "The temperature in Celsius is #{celc}."
+  celc
 end
