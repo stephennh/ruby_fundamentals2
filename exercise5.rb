@@ -6,4 +6,9 @@ def my_first_method
   1 + 1
 end
 
-puts my_first_method
+
+def explicit_return_method
+  "The interpreter reads over me, but does nothing"
+  return 25
+  "The interpreter does not read me, because the return keyword above forces the interpreter to exit the method"
+end
