@@ -2,14 +2,16 @@
 students = {
   :cohort1 => 34,
   :cohort2 => 42,
-  :cohort3 => 22,
-  :cohort4 => 43
+  :cohort3 => 22
 }
 
 # 2
 students.each do |k, v|
   puts "#{k}: #{v} students"
 end
+
+# 3
+students[cohort4] = 43
 
 # 4
 puts students.keys
@@ -20,6 +22,10 @@ stud_value.each do |new_stud|
   x = new_stud * 1.05
   puts "#{x.to_i} is the expanded classroom"
 end
+
+# 6
+students.delete["cohort2"]
+
 
 # 7 Bonus
 # counter starts at 0
